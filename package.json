@@ -25,7 +25,6 @@
   "homepage": "https://github.com/jaunt/shared-ts#readme",
   "devDependencies": {
     "@types/node": "^16.11.6",
-    "np": "^7.6.0",
     "ts-node": "^10.4.0",
     "typescript": "^4.4.4"
   },

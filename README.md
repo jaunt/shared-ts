@@ -4,4 +4,4 @@
 
 #### Simple typescript utilities shared by danglingdev repositories
 
-#### [Documentation](https://jaunt.github.io/shared-ts/docs/index.html)
+#### [Documentation](https://jaunt.github.io/shared-ts/)

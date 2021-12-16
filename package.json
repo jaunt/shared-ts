@@ -6,7 +6,8 @@
   "types": "./lib/shared.d.ts",
   "scripts": {
     "postbuild": "typedoc src/shared.ts --excludeInternal --excludePrivate",
-    "build": "tsc"
+    "build": "tsc",
+    "test": "echo \"No test specified\""
   },
   "repository": {
     "type": "git",

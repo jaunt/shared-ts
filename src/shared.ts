@@ -1,6 +1,6 @@
 import fs from "fs";
 import fspath from "path";
-import chalk from "chalk";
+import pico from "picocolors";
 
 /**
  * Checks if a directory is within its parent
@@ -98,7 +98,7 @@ class Pinger {
   }
 }
 
-const _formatLog = (prefix: string, useChalk = chalk.green, ...args: any) => {
+const _formatLog = (prefix: string, useChalk = pico.green, ...args: any) => {
   for (let arg of args) {
     let txt;
     if (typeof arg === "string" || (arg as any) instanceof String) {
@@ -106,7 +106,7 @@ const _formatLog = (prefix: string, useChalk = chalk.green, ...args: any) => {
     } else {
       txt = JSON.stringify(arg, null, 2);
     }
-    console.log(useChalk(prefix + chalk.bold(arg)));
+    console.log(useChalk(prefix + pico.bold(arg)));
   }
 };
 
@@ -128,8 +128,8 @@ const _formatLog = (prefix: string, useChalk = chalk.green, ...args: any) => {
 const makeLoggers = (
   prefix: string,
   errorFlag: string = "[ERROR] ",
-  goodColor = chalk.green,
-  badColor = chalk.red
+  goodColor = pico.green,
+  badColor = pico.red
 ) => {
   return {
     log: _formatLog.bind(null, prefix, goodColor),

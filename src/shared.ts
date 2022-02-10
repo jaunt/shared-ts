@@ -98,7 +98,7 @@ class Pinger {
   }
 }
 
-const _formatLog = (prefix: string, useChalk = pico.green, ...args: any) => {
+const _formatLog = (prefix: string, usePico = pico.green, ...args: any) => {
   for (let arg of args) {
     let txt;
     if (typeof arg === "string" || (arg as any) instanceof String) {
@@ -106,7 +106,7 @@ const _formatLog = (prefix: string, useChalk = pico.green, ...args: any) => {
     } else {
       txt = JSON.stringify(arg, null, 2);
     }
-    console.log(useChalk(prefix + pico.bold(arg)));
+    console.log(usePico(prefix + pico.bold(arg)));
   }
 };
 

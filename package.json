@@ -1,6 +1,6 @@
 {
   "name": "@danglingdev/shared-ts",
-  "version": "0.0.8",
+  "version": "1.0.0",
   "description": "Simple typescript utilities shared by danglingdev repositories",
   "main": "./lib/shared.js",
   "types": "./lib/shared.d.ts",
